@@ -1,0 +1,764 @@
+.sms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 40px;
+
+    .head {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+        h1 {
+            color: #484848;
+            border-bottom: 2px solid #00c0ef;
+            font-family: IRANSans;
+            font-weight: 400;
+            width: auto;
+            margin: 0;
+            font-size: 1.7rem;
+            padding: 10px;
+        }
+
+    }
+
+    .body {
+        margin-top: 20px;
+        width: 100%;
+        margin-top: 40px;
+
+        .smsSections {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-items: center;
+
+            .priceSection {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+                .plan {
+                    padding: 3px 15px 15px;
+                    cursor: default;
+                    box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.15);
+                    background: #fff;
+                    margin: 0 -7px;
+                    width: 95%;
+                    z-index: 10;
+                    border-radius: 5px;
+                    transition: all 0.15s ease-out;
+                    margin-bottom: 20px;
+
+                    .plan-title {
+                        display: flex;
+                        justify-content: space-between;
+                        line-height: 40px;
+                        padding: 0 10px 0 0;
+
+                        h2 {
+                            color: #5260b9;
+                            border-bottom: solid 1px #5260b9;
+                        }
+
+                        span {
+                            font-size: 1.7rem;
+                            float: left;
+                            color: #c2c2c2;
+                            letter-spacing: 3px;
+
+                            > span {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+
+                    .plan-price-title {
+                        display: flex;
+                        justify-content: space-between;
+                        border-top: solid 1px #d6d6d6;
+                        border-bottom: solid 1px #d6d6d6;
+                        align-items: center;
+                        margin-top: -1px;
+                        padding: 10px 0 0 0;
+
+                        .price_per_year {
+                            font-size: 1.2rem;
+                            color: #3b3b3b;
+                            padding-right: 20px;
+                        }
+
+                        .plan-price {
+                            align-items: center;
+
+                            span:first-child {
+                                font-size: 1.9rem;
+                                color: #fb5d5d;
+                                font-weight: 500;
+                                margin-top: 5px;
+                            }
+
+                            span:last-child {
+                                color: #000;
+                                font-size: 1.1rem;
+                                display: block;
+                                float: left;
+                                width: 40px;
+                                text-align: center;
+                                padding: 15px 0;
+                            }
+                        }
+
+
+                    }
+
+                    .plan-detail {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 15px 0;
+
+                        li {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 5px 0;
+
+                            h2 {
+                                color: #4e555b;
+                                font-size: 1.1rem;
+                            }
+
+                            span {
+                                color: #4e555b;
+                                font-size: 1.1rem;
+                                font-weight: 500;
+
+                                i.text-success {
+                                    font-size: 1.4rem;
+                                    color: #2d995b;
+                                }
+
+                                i.text-danger {
+                                    font-size: 1.4rem;
+                                    color: #fa1c1c;
+                                }
+                            }
+                        }
+                    }
+
+                    .sbtn {
+                        display: block;
+                        padding: 10px 15px;
+                        color: #fff;
+                        border-radius: 25px;
+                        transition: all 0.1s ease-out;
+                        text-align: center;
+                        background: #fb5d5d;
+                        margin-bottom: 5px;
+                        font-weight: 500;
+                    }
+
+                }
+            }
+
+            .important {
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border-radius: 5px;
+                padding: 25px;
+                z-index: 10;
+                margin: 10px;
+
+
+                .importantTitle {
+                    width: 100%;
+                    display: flex;
+
+                    span {
+
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        color: #fa6666;
+
+                    }
+                }
+
+                .importantBody {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 10px;
+
+                    span {
+                        font-size: 1.1rem;
+                        font-weight: 400;
+                        margin-top: 8px;
+                        line-height: 2.2rem;
+                    }
+                }
+            }
+
+            .lines {
+                font-weight: 400;
+                line-height: 26px;
+                color: #88889b;
+                direction: rtl;
+                font-size: 16px;
+                box-sizing: border-box;
+                background-color: white;
+                border-radius: 5px;
+                z-index: 10;
+                padding: 10px;
+                margin: 20px 10px;
+
+
+                .linesTitle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 20px;
+
+                    span {
+                        font-size: 1.7rem;
+                        font-weight: 500;
+                        color: #fa6666;
+                    }
+                }
+
+                .linesBody {
+                    margin-top: 50px;
+                    position: relative;
+                    text-align: center;
+
+                    ul {
+                        flex-wrap: wrap;
+                        margin-bottom: 0;
+                        list-style: none;
+                        border-radius: 0;
+                        border-bottom: 1px solid #eee;
+                        display: block;
+                        padding: 0 80px;
+                        position: relative;
+                        text-align: center;
+
+                        li {
+                            margin-bottom: -1px;
+                            display: inline-block;
+
+                            .linesTab {
+                                display: block;
+                                border: 1px solid transparent;
+                                color: #4B456F;
+                                border-bottom: 4px solid transparent;
+                                border-top: none;
+                                border-right: none;
+                                border-left: none;
+                                border-radius: 0;
+                                padding: 12px 15px;
+                                cursor: pointer;
+                            }
+
+                            .active {
+                                border-bottom: 4px solid #f95f5b;
+                                color: #f95f5b !important;
+                            }
+                        }
+                    }
+
+                    .licenseBodyItems {
+                        margin-top: 40px;
+
+                        .licenseBodyItem {
+                            transition: opacity .15s linear;
+                            display: none;
+                            opacity: 1;
+
+                            .licenseBodyItemRow {
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin-right: 0 !important;
+                                margin-left: 0 !important;
+
+                                .rowTitle {
+                                    position: relative;
+                                    width: 100%;
+                                    padding-right: 15px;
+                                    padding-left: 15px;
+                                    flex: 0 0 100%;
+                                    max-width: 100%;
+                                    padding-bottom: 15px;
+
+                                    strong {
+                                        box-sizing: border-box;
+                                        text-align: center !important;
+                                        color: #f95f5b;
+                                        font-weight: 700;
+                                        line-height: 56px;
+                                        word-break: keep-all;
+                                        overflow-wrap: normal;
+                                        font-size: 1.1em !important;
+                                    }
+                                }
+
+                                .rowBody {
+                                    display: block;
+                                    width: 100%;
+                                    overflow-x: auto;
+
+                                    table {
+                                        box-sizing: border-box;
+                                        border-collapse: collapse;
+                                        margin-bottom: 1rem;
+                                        width: 100%;
+                                        color: #212529;
+                                        text-align: center !important;
+                                        border: 0;
+
+                                        thead {
+                                            border-collapse: collapse;
+                                            color: #212529;
+                                            text-align: center !important;
+                                            box-sizing: border-box;
+
+                                            tr {
+                                                border-collapse: collapse;
+                                                color: #212529;
+                                                text-align: center !important;
+                                                box-sizing: border-box;
+
+                                                th {
+                                                    border-collapse: collapse;
+                                                    box-sizing: border-box;
+                                                    text-align: center !important;
+                                                    padding: .75rem;
+                                                    border: 1px solid #dee2e6;
+                                                    vertical-align: bottom;
+                                                    border-bottom: 2px solid #dee2e6;
+                                                    border-bottom-width: 2px;
+                                                    color: #343535;
+                                                    background-color: rgba(179, 203, 239, .4);
+                                                    border-color: rgba(179, 203, 239, .4);
+                                                }
+                                            }
+                                        }
+
+                                        tbody {
+                                            border-collapse: collapse;
+                                            color: #212529;
+                                            text-align: center !important;
+                                            box-sizing: border-box;
+
+                                            tr {
+                                                border-collapse: collapse;
+                                                color: #212529;
+                                                text-align: center !important;
+                                                box-sizing: border-box;
+                                                background-color: rgba(0, 0, 0, .05);
+
+                                                td {
+                                                    border-collapse: collapse;
+                                                    color: #212529;
+                                                    text-align: center !important;
+                                                    box-sizing: border-box;
+                                                    padding: .75rem;
+                                                    vertical-align: top;
+                                                    border: 1px solid #dee2e6;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .active {
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+
+            .betterLine {
+                display: flex;
+                flex-direction: column;
+                z-index: 10;
+                background-color: white;
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+
+                .betterLineTitle {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 20px;
+
+                    span:first-child {
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        color: #fa6666;
+                    }
+
+                    span:last-child {
+                        margin-top: 10px;
+                        font-size: 1.1rem;
+                        line-height: 2.2rem;
+                        font-weight: 400;
+                    }
+
+
+                }
+
+                .betterLineBody {
+                    .betterLineRow {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-right: 0 !important;
+                        margin-left: 0 !important;
+
+                        .rowFirst {
+                            position: relative;
+                            width: 100%;
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            padding: 0 !important;
+                            text-align: right !important;
+                            display: none;
+
+                            .price-value-header {
+
+                                ul {
+                                    li {
+                                        font-size: 16px;
+                                        color: #2b2727;
+                                        min-height: 45px;
+                                        padding-top: 8px;
+                                    }
+
+                                    .bg-gray {
+                                        color: #000;
+                                        font-size: 16px;
+                                        min-height: 45px;
+                                        padding-top: 8px;
+                                        background-color: #f8f8f8;
+                                    }
+
+                                    .bg-green {
+                                        font-size: 16px;
+                                        color: #2b2727;
+                                        min-height: 45px;
+                                        padding-top: 8px;
+                                        background-color: rgba(179, 203, 239, .4);
+                                    }
+                                }
+                            }
+                        }
+
+                        .betterLineRowItem {
+                            position: relative;
+                            width: 100%;
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            margin-bottom: 3rem !important;
+                            padding: 0 !important;
+
+                            .price-value {
+                                font-weight: 400;
+                                line-height: 26px;
+                                color: #88889b;
+                                direction: rtl;
+                                font-size: 16px;
+                                text-align: center;
+                                box-sizing: border-box;
+
+                                ul {
+                                    box-sizing: border-box;
+                                    padding: 0;
+                                    margin: 0;
+                                    list-style: none;
+
+                                    li {
+                                        color: #000;
+                                        font-size: 16px;
+                                        min-height: 45px;
+                                        padding-top: 8px;
+
+                                        .value-hidden-lg {
+                                            box-sizing: border-box;
+                                            display: block;
+                                            color: #464646;
+                                            font-size: 14px;
+                                        }
+
+                                        .value-text {
+                                            color: #000;
+                                            font-size: 16px;
+                                            box-sizing: border-box;
+                                            font-weight: 700;
+                                        }
+
+                                        .value-close {
+                                            color: #000;
+                                            font-size: 16px;
+                                            box-sizing: border-box;
+
+                                            &:before {
+                                                content: '✘';
+                                                font-size: 18px;
+                                                color: #e12309;
+                                            }
+                                        }
+
+                                        .value-check {
+                                            color: #000;
+                                            font-size: 16px;
+                                            box-sizing: border-box;
+
+                                            &:before {
+                                                content: '✔';
+                                                font-size: 18px;
+                                                color: #009b24;
+                                            }
+                                        }
+                                    }
+
+                                    .bg-gray {
+                                        color: #000;
+                                        font-size: 16px;
+                                        min-height: 45px;
+                                        padding-top: 8px;
+                                        background-color: #f8f8f8;
+                                    }
+
+                                    .bg-green {
+                                        color: #000;
+                                        font-size: 16px;
+                                        min-height: 45px;
+                                        padding-top: 8px;
+                                        background-color: rgba(179, 203, 239, .4);
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 980px) {
+
+    .sms {
+
+        .body {
+
+            .smsSections {
+
+                .priceSection {
+                    flex-direction: row !important;
+
+                    .plan {
+                        margin-right: 25px !important;
+                        .plan-title {
+                            h2 {
+                            }
+                            span {
+                                > span {
+                                }
+                            }
+                        }
+
+                        .plan-price-title {
+
+                            .price_per_year {
+                                font-size: 1.3rem;
+                            }
+
+                            .plan-price {
+
+                                span:first-child {
+                                }
+
+                                span:last-child {
+                                }
+                            }
+
+
+                        }
+
+                        .plan-detail {
+
+                            li {
+                                h2 {
+                                }
+                                span {
+                                    i {
+                                    }
+                                }
+                            }
+                        }
+
+                        .sbtn {
+                        }
+
+                    }
+                }
+
+                .important {
+                    width: 100%;
+
+                    .importantTitle {
+                        span {
+                            font-size: 1.7rem;
+                        }
+                    }
+
+                    .importantBody {
+                        span {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+
+                .lines {
+                    width: 100% !important;
+
+                    .linesTitle {
+                        span {
+                        }
+                    }
+
+                    .linesBody {
+
+                        ul {
+
+                            li {
+
+                                .linesTab {
+                                }
+
+                                .active {
+                                }
+                            }
+                        }
+
+                        .licenseBodyItems {
+
+                            .licenseBodyItem {
+
+                                .licenseBodyItemRow {
+
+                                    .rowTitle {
+
+                                        strong {
+                                        }
+                                    }
+
+                                    .rowBody {
+
+                                        table {
+
+                                            thead {
+
+                                                tr {
+
+                                                    th {
+                                                    }
+                                                }
+                                            }
+
+                                            tbody {
+
+                                                tr {
+                                                    td {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .betterLine {
+                    width: 100% !important;
+
+                    .betterLineTitle {
+
+                        span:first-child {
+                        }
+
+                        span:last-child {
+                        }
+
+
+                    }
+
+                    .betterLineBody {
+                        .betterLineRow {
+                            display: grid;
+                            grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr 1fr;
+                            .rowFirst {
+                                display: contents !important;
+                                width: 100% !important;
+                                .price-value-header {
+                                    ul {
+                                        li {
+                                        }
+
+                                        .bg-green {
+                                        }
+                                    }
+                                }
+                            }
+
+                            .betterLineRowItem {
+
+                                .price-value {
+                                    ul {
+                                        li {
+                                            .value-hidden-lg {
+                                                display: none !important;
+                                            }
+
+                                            .value-text {
+                                            }
+
+                                            .value-close {
+                                                &:before {
+                                                }
+                                            }
+
+                                            .value-check {
+                                                &:before {
+                                                }
+                                            }
+                                        }
+
+                                        .bg-gray {
+                                        }
+
+                                        .bg-green {
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

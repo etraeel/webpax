@@ -1,0 +1,450 @@
+.owl-stage-outer {
+    padding: 10px 0;
+}
+
+.articles_section {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    max-width: 1200px;
+    width: 250px;
+    height: 100%;
+    margin-top: 30px;
+
+    .articles_header {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+        h1 {
+            color: #484848;
+            border-bottom: 2px solid #00c0ef;
+            width: auto;
+            font-weight: 450;
+            margin: 0;
+            font-size: 2rem;
+        }
+    }
+
+    .articles_body {
+        margin-top: 20px;
+        display: flex;
+        width: 107%;
+        height: 100%;
+
+        .article_list {
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+            .box {
+                background-color: #ffffff;
+                width: 250px;
+                height: 360px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 5px 5px 5px #aaa;
+
+                .image_box {
+                    position: relative;
+                    height: 200px;
+                    width: 100%;
+                    z-index: 0;
+                    margin-bottom: -15px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        object-fit: cover;
+                        transition: all 150ms;
+
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+
+                .body_box {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 20% 45% 20% 15%;
+                    border-radius: 20px;
+                    background-color: #fff;
+                    height: 220px;
+                    width: 100%;
+                    z-index: 1;
+                    padding: 15px;
+                    color: #444444;
+
+                    a {
+                        .box_title {
+                            color: #444444;
+                        }
+                    }
+
+                    .box_text {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        line-height: 1.7rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: inherit;
+                    }
+
+                    .box_keys {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+
+                        span {
+                            color: #999;
+                        }
+                    }
+
+                    .box_footer {
+                        display: flex;
+                        height: 25px;
+                        width: 100%;
+                        align-items: flex-end;
+
+                        span {
+                            align-items: center;
+                        }
+
+                        i {
+                            margin-right: 5px;
+                            align-items: center;
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                        }
+
+                        .likeheart {
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}
+
+.product_section {
+    margin-top: 40px;
+    padding: 0 10px 20px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #c1c1c1;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+
+    &::before {
+        background-position: 50%;
+        -moz-background-size: 600px;
+        background-size: 600px;
+        background-image: url("/img/backgound_mellat.png");
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 0;
+        content: "";
+        opacity: .06;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    .product_title {
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #444444;
+        margin-top: 30px;
+    }
+
+    .product_description {
+        margin-top: 20px;
+        text-align: center;
+        line-height: 2.3rem;
+        color: #444444;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .product_images {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        width: 99%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+
+        img {
+            display: inline-block;
+            width: 320px;
+            height: 250px;
+            margin: 10px 5px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .product_details {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: center;
+
+
+        .plan {
+            padding: 3px 15px 15px;
+            cursor: default;
+            box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.15);
+            background: #fff;
+            margin: 0 -7px;
+            width: 95%;
+            max-width: 480px;
+            z-index: 10;
+            border-radius: 5px;
+            transition: all 0.15s ease-out;
+
+            .plan-title {
+                display: flex;
+                justify-content: space-between;
+                line-height: 40px;
+                padding: 0 10px 0 0;
+
+                h2 {
+                    color: #5260b9;
+                    border-bottom: solid 1px #5260b9;
+                }
+
+                span {
+                    font-size: 1.5rem;
+                    float: left;
+                    color: #c2c2c2;
+                    letter-spacing: 3px;
+
+                    > span {
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+            .plan-price-title {
+                display: flex;
+                justify-content: space-between;
+                border-top: solid 1px #d6d6d6;
+                border-bottom: solid 1px #d6d6d6;
+                align-items: center;
+                margin-top: -1px;
+                padding: 10px 0 0 0;
+
+                .price_per_year {
+                    font-size: 1.3rem;
+                    color: #3b3b3b;
+                    padding-right: 20px;
+                }
+
+                .plan-price {
+                    align-items: center;
+
+                    span:first-child {
+                        font-size: 1.7rem;
+                        color: #fb5d5d;
+                        font-weight: 500;
+                        margin-top: 5px;
+                    }
+
+                    span:last-child {
+                        color: #000;
+                        font-size: 1rem;
+                        display: block;
+                        float: left;
+                        width: 40px;
+                        text-align: center;
+                        padding: 15px 0;
+                    }
+                }
+
+
+            }
+
+            .plan-detail {
+                display: flex;
+                flex-direction: column;
+                margin: 15px 0;
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 5px 0;
+
+                    h2 {
+                        color: #4e555b;
+                        font-size: .9rem;
+                    }
+
+                    span {
+                        color: #4e555b;
+                        font-size: .9rem;
+                        font-weight: 500;
+
+                        i {
+                            font-size: 1.2rem;
+                            color: #2d995b;
+                        }
+                    }
+                }
+            }
+
+            .sbtn {
+                display: block;
+                padding: 10px 15px;
+                color: #fff;
+                border-radius: 25px;
+                transition: all 0.1s ease-out;
+                text-align: center;
+                background: #fb5d5d;
+                margin-bottom: 5px;
+            }
+
+            .sbtn-green {
+                background: #2d995b;
+            }
+
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 780px) {
+    .articles_section {
+        width: 700px;
+    }
+    .product_section {
+        .product_title {
+            font-size: 2rem;
+        }
+        .product_description {
+            font-size: 1.2rem;
+        }
+        .product_images {
+
+            img {
+                width: 520px;
+                height: 350px;
+            }
+        }
+        .product_details {
+            .plan {
+                .plan-detail {
+                    li {
+                        h2 {
+                            font-size: 1.1rem;
+                        }
+                        span {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .articles_section {
+        width: 900px;
+    }
+    .box {
+        width: 260px !important;
+    }
+
+    .product_section {
+        .product_images {
+            img {
+                width: 620px;
+                height: 500px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1180px) {
+    .articles_section {
+        width: 1150px;
+
+        .box {
+            width: 260px !important;
+        }
+    }
+
+    .product_section {
+
+        .product_images {
+
+            img {
+                width: 780px;
+                height: 600px;
+            }
+        }
+        .product_details {
+            .plan {
+                .plan-price-title {
+                    .price_per_year {
+
+                    }
+
+                    .plan-price {
+
+                        span:first-child {
+                            font-size: 1.9rem;
+                        }
+
+                        span:last-child {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+
+                }
+                .plan-detail {
+                    li {
+                        h2 {
+                            font-size: 1.2rem;
+                        }
+                        span {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
