@@ -138,7 +138,7 @@ class HomeController extends Controller
 
     public function contactUs()
     {
-        SitemapGenerator::create('https://webpax.ir')->writeToFile(base_path("public_html/sitemap.xml"));
+        SitemapGenerator::create('https://webpax.ir')->writeToFile(base_path("public/sitemap.xml"));
         $contactUs_text = Setting::where('name' , 'site_contact_us')->first();
         return view('singlePage.contactUs', compact('contactUs_text'));
     }
